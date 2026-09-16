@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Fitness Tracker</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <h1>⚔️ BAKI MODE</h1>
+      <p class="tagline">Train Like a Monster. Track Every Rep. Build Your Legacy.</p>
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+
+  <main class="wrap">
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <section class="board">
+
+      <div class="board-head">
+        <h2>This Week</h2>
+        <p id="week-line" class="week-line">
+          Loading your workout stats...
+        </p>
+      </div>
+
+      <div class="tallies">
+
+        <div class="tally">
+          <span class="tally-num" id="stat-volume">0</span>
+          <span class="tally-label">Total Reps Completed</span>
+        </div>
+
+        <div class="tally">
+          <span class="tally-num" id="stat-sets">0</span>
+          <span class="tally-label">Working Sets</span>
+        </div>
+
+        <div class="tally">
+          <span class="tally-num" id="stat-sessions">0</span>
+          <span class="tally-label">Training Days</span>
+        </div>
+
+        <div class="tally">
+          <span class="tally-num" id="stat-best">—</span>
+          <span class="tally-label">Heaviest Lift</span>
+        </div>
+
+      </div>
+
+      <div class="split">
+        <h3>Reps by Muscle Group</h3>
+
+        <div id="group-bars" class="bars">
+          <p class="empty">No reps yet. Log your first workout.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ================= TWO COLUMNS ================= -->
+
+    <div class="columns">
+
+      <!-- ================= WORKOUT FORM ================= -->
+
+      <section class="panel">
+
+        <h2>Log Workout</h2>
+
+        <form id="workout-form">
+
+          <div class="field">
+            <label for="exercise">Exercise</label>
+            <input
+              type="text"
+              id="exercise"
+              name="exercise"
+              placeholder="Bench Press, Squat, Deadlift..."
+              autocomplete="off"
+              required>
+          </div>
+
+          <div class="row">
+
+            <div class="field">
+              <label for="muscle_group">Muscle Group</label>
+              <select id="muscle_group" name="muscle_group"></select>
+            </div>
+
+            <div class="field">
+              <label for="date">Workout Date</label>
+              <input
+                type="date"
+                id="date"
+                name="date"
+                required>
+            </div>
+
+          </div>
+
+          <div class="row three">
+
+            <div class="field">
+              <label for="sets">Sets</label>
+              <input
+                type="number"
+                id="sets"
+                name="sets"
+                min="1"
+                max="20"
+                value="3"
+                required>
+            </div>
+
+            <div class="field">
+              <label for="reps">Reps</label>
+              <input
+                type="number"
+                id="reps"
+                name="reps"
+                min="1"
+                max="100"
+                value="10"
+                required>
+            </div>
+
+            <div class="field">
+              <label for="weight_kg">
+                Weight (kg)
+                <span class="optional">optional</span>
+              </label>
+
+              <input
+                type="number"
+                id="weight_kg"
+                name="weight_kg"
+                min="0"
+                step="0.5"
+                placeholder="Optional">
+            </div>
+
+          </div>
+
+          <div class="field">
+            <label for="notes">
+              Notes
+              <span class="optional">(Optional)</span>
+            </label>
+
+            <input
+              type="text"
+              id="notes"
+              name="notes"
+              placeholder="Last set to failure...">
+          </div>
+
+          <button type="submit" class="btn">
+            💾 Save Workout
+          </button>
+
+          <p id="workout-msg" class="msg"></p>
+
+        </form>
+
+      </section>
+
+      <!-- ================= BMI CALCULATOR ================= -->
+
+      <section class="panel">
+
+        <h2>BMI Calculator</h2>
+
+        <form id="bmi-form">
+
+          <div class="row">
+
+            <div class="field">
+              <label for="height_cm">Height (cm)</label>
+              <input
+                type="number"
+                id="height_cm"
+                placeholder="173"
+                required>
+            </div>
+
+            <div class="field">
+              <label for="bmi_weight">Weight (kg)</label>
+              <input
+                type="number"
+                id="bmi_weight"
+                placeholder="71.9"
+                required>
+            </div>
+
+          </div>
+
+          <button class="btn ghost" type="submit">
+            Calculate BMI
+          </button>
+
+          <p id="bmi-msg" class="msg"></p>
+
+        </form>
+
+        <div id="bmi-result" class="bmi-result" hidden>
+
+          <div class="bmi-figure">
+            <span id="bmi-value">0</span>
+            <span id="bmi-category" class="bmi-category">—</span>
+          </div>
+
+          <div class="scale">
+
+            <div class="scale-track">
+              <span id="bmi-marker" class="scale-marker"></span>
+            </div>
+
+            <div class="scale-ticks">
+              <span>18.5</span>
+              <span>25</span>
+              <span>30</span>
+            </div>
+
+          </div>
+
+          <p id="bmi-advice"></p>
+          <p id="bmi-range"></p>
+
+        </div>
+
+      </section>
+
+    </div>
+
+    <!-- ================= TRAINING LOG ================= -->
+
+    <section class="panel wide">
+
+      <div class="panel-head">
+
+        <h2>Training Log</h2>
+
+        <label class="filter">
+          <span>Filter</span>
+
+          <select id="filter-group" name="filter-group">
+            <option value="All">All</option>
+          </select>
+        </label>
+
+      </div>
+
+      <div id="log-list" class="log-list">
+        <p class="empty">No workouts logged yet.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="wrap foot">
+    <p>💪 Your workout data is stored locally in <strong>fitness.db</strong>.</p>
+    <p>BMI is an estimate and not a medical diagnosis.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
