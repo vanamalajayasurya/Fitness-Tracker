@@ -80,7 +80,7 @@ Track your weekly performance with beautiful stats.
 
 <div align="center">
 
-<img src="assets/gifs/baki-run.gif" width="95%" alt="BMI Animation"/>
+<img src="220106.gif" width="95%" alt="BMI Animation"/>
 
 </div>
 
