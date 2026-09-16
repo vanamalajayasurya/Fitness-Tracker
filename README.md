@@ -4,7 +4,7 @@
 
 ### *Train Like a Monster. Track Every Rep. Build Your Legacy.*
 
-<img src="assets/gifs/baki-pray.gif" width="100%" alt="Baki Hanma Banner"/>
+<img src="220110.gif" width="100%" alt="Baki Hanma Banner"/>
 
 <br><br>
 
@@ -41,7 +41,7 @@ Track every workout, calculate BMI, monitor weekly progress, and train with a **
 
 <div align="center">
 
-<img src="assets/gifs/baki-run.gif" width="95%" alt="Workout Animation"/>
+<img src="220097.gif" width="95%" alt="Workout Animation"/>
 
 </div>
 
