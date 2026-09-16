@@ -1,136 +1,141 @@
-<div align="center">
-
 # ⚔️ BAKI MODE – Fitness Tracker 💪
 
-### _Train Like a Monster. Track Every Rep. Build Your Legacy._
+<div align="center">
 
-<img src="assets/gifs/baki-banner.gif" width="100%" alt="Baki Hanma Banner"/>
+### *Train Like a Monster. Track Every Rep. Build Your Legacy.*
 
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+<img src="assets/gifs/baki-pray.gif" width="100%" alt="Baki Hanma Banner"/>
+
+<br><br>
+
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge\&logo=flask\&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge\&logo=sqlite\&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge\&logo=vercel\&logoColor=white)
 
 </div>
 
 ---
 
-## 🔥 Live Demo
+# 🌐 Live Demo
 
-🌐 **Live Website:** `https://your-project.vercel.app`
-
-💻 **GitHub Repository:** `https://github.com/vanamalajayasurya/your-repository`
-
----
-
-# 📸 Project Preview
-
-## 🏠 Dashboard
-
-<img src="assets/screenshots/dashboard.png" width="100%" alt="Dashboard Screenshot"/>
-
-## 🏋️ Workout Logger
-
-<img src="assets/screenshots/workout.png" width="100%" alt="Workout Screenshot"/>
-
-## 📊 BMI Calculator
-
-<img src="assets/screenshots/bmi.png" width="100%" alt="BMI Screenshot"/>
+| 🔗 Links                 | URL                                                                       |
+| ------------------------ | ------------------------------------------------------------------------- |
+| **🚀 Live Website**      | https://fitnesstracker-4v52xa13n-jayasuryas-projects-7a39637c.vercel.app/ |
+| **💻 GitHub Repository** | https://github.com/vanamalajayasurya/Fitness-Tracker                      |
 
 ---
 
-# ⚡ Features
+# 📸 Project Overview
 
-## 🏋️ Workout Tracking
+> **BAKI MODE** is an anime-inspired fitness tracker built using **Flask + HTML + CSS + JavaScript + SQLite + ExerciseDB API**.
 
-<img src="assets/gifs/baki-training.gif" width="500"/>
-
-- Log exercises with sets, reps and weight.
-- Select muscle groups.
-- Save workout notes.
-- Delete workouts instantly.
-- SQLite database storage.
+Track every workout, calculate BMI, monitor weekly progress, and train with a **Baki Hanma inspired UI**.
 
 ---
 
-## 📈 Weekly Progress Dashboard
+# 🏋️ Workout Tracker
 
-<img src="assets/gifs/baki-flex.gif" width="500"/>
+<div align="center">
 
-Track:
+<img src="assets/gifs/baki-run.gif" width="95%" alt="Workout Animation"/>
 
-- Total Reps Completed
-- Working Sets
-- Training Days
-- Heaviest Lift
-- Reps by Muscle Group
+</div>
 
----
+### Features
 
-## 💪 BMI Calculator
-
-<img src="assets/gifs/baki-power.gif" width="500"/>
-
-- Calculate BMI instantly.
-- Healthy weight range.
-- BMI category.
-- Fitness advice.
+* ✅ Log workouts with exercise name.
+* ✅ Sets, reps and weight tracking.
+* ✅ Notes for every workout.
+* ✅ Muscle group selection.
+* ✅ Workout history.
+* ✅ Delete workouts instantly.
 
 ---
 
-## 🥊 Exercise Database
+# 📊 Weekly Progress Dashboard
 
-<img src="assets/gifs/baki-fight.gif" width="500"/>
+<div align="center">
 
-Powered by **ExerciseDB RapidAPI**
+<img src="assets/gifs/baki-pray.gif" width="95%" alt="Dashboard Animation"/>
 
-- Search exercises.
-- Browse by body part.
-- Hundreds of workouts.
+</div>
+
+Track your weekly performance with beautiful stats.
+
+### Dashboard Includes
+
+* 🔥 Total Reps Completed
+* 💪 Working Sets
+* 📅 Training Days
+* 🏆 Heaviest Lift
+* 📈 Reps by Muscle Group
 
 ---
 
-# 🛠️ Tech Stack
+# 💪 BMI Calculator
 
-| Technology     | Purpose            |
-| -------------- | ------------------ |
-| HTML5          | Frontend Structure |
-| CSS3           | Anime Inspired UI  |
-| JavaScript     | Frontend Logic     |
-| Python         | Backend            |
-| Flask          | REST API           |
-| SQLite         | Local Database     |
-| ExerciseDB API | Exercise Data      |
-| Vercel         | Deployment         |
+<div align="center">
+
+<img src="assets/gifs/baki-run.gif" width="95%" alt="BMI Animation"/>
+
+</div>
+
+### Calculate Instantly
+
+* BMI Value
+* Healthy Range
+* Weight Recommendation
+* Personalized Fitness Advice
+
+---
+
+# 🥊 Exercise Database (RapidAPI)
+
+Search and discover hundreds of gym exercises.
+
+### ExerciseDB Features
+
+* 🔎 Search exercise by name.
+* 🦾 Filter by body part.
+* 📚 Browse hundreds of exercises.
+
+---
+
+# ⚡ Tech Stack
+
+| Technology     | Purpose             |
+| -------------- | ------------------- |
+| HTML5          | Frontend Structure  |
+| CSS3           | Anime Dark Theme UI |
+| JavaScript     | Frontend Logic      |
+| Python         | Backend             |
+| Flask          | REST API            |
+| SQLite         | Workout Database    |
+| ExerciseDB API | Exercise Search     |
+| Vercel         | Deployment          |
 
 ---
 
 # 📂 Project Structure
 
 ```text
-BAKI-MODE-Fitness-Tracker
+Fitness-Tracker/
 │
+├── app.py
 ├── index.html
 ├── style.css
 ├── script.js
-├── app.py
-├── fitness.db
 ├── requirements.txt
 ├── vercel.json
-├── .env
-├── assets
-│   ├── gifs
-│   │   ├── baki-banner.gif
-│   │   ├── baki-training.gif
-│   │   ├── baki-flex.gif
-│   │   ├── baki-power.gif
-│   │   └── baki-fight.gif
-│   └── screenshots
-│       ├── dashboard.png
-│       ├── workout.png
-│       └── bmi.png
+├── baki-hanma.jpg
+├── assets/
+│   └── gifs/
+│       ├── baki-pray.gif
+│       └── baki-run.gif
 └── README.md
 ```
 
@@ -141,8 +146,8 @@ BAKI-MODE-Fitness-Tracker
 ### Clone Repository
 
 ```bash
-git clone https://github.com/vanamalajayasurya/your-repository.git
-cd BAKI-MODE-Fitness-Tracker
+git clone https://github.com/vanamalajayasurya/Fitness-Tracker.git
+cd Fitness-Tracker
 ```
 
 ### Install Dependencies
@@ -151,7 +156,7 @@ cd BAKI-MODE-Fitness-Tracker
 pip install -r requirements.txt
 ```
 
-### Run Flask Backend
+### Run Project
 
 ```bash
 python app.py
@@ -167,7 +172,7 @@ http://127.0.0.1:5000
 
 # 🌐 API Endpoints
 
-### Workout APIs
+## Workout APIs
 
 | Method | Endpoint         |
 | ------ | ---------------- |
@@ -177,14 +182,14 @@ http://127.0.0.1:5000
 | DELETE | `/workouts/<id>` |
 | GET    | `/stats`         |
 
-### BMI APIs
+## BMI APIs
 
 | Method | Endpoint       |
 | ------ | -------------- |
 | POST   | `/bmi`         |
 | GET    | `/bmi/history` |
 
-### Exercise APIs
+## Exercise APIs
 
 | Method | Endpoint                       |
 | ------ | ------------------------------ |
@@ -209,23 +214,17 @@ http://127.0.0.1:5000
 
 ---
 
-# ⚔️ Train Like Baki
-
-<div align="center">
-  <img src="assets/gifs/baki-walk.gif" width="450"/>
-</div>
-
-> _"Every workout is a battle. Every rep is a victory."_
-
----
-
 # 🚀 Deployment
 
-### Vercel
+### Hosted on Vercel
 
 ```bash
 vercel
 ```
+
+Live URL:
+
+**https://fitnesstracker-4v52xa13n-jayasuryas-projects-7a39637c.vercel.app/**
 
 ---
 
@@ -233,22 +232,23 @@ vercel
 
 ## Vanamala Jayasurya
 
-**B.Tech CSE (Data Science)**
+**B.Tech Computer Science & Engineering (Data Science)**
 
-Aspiring Full Stack Developer & Data Analyst
+Aspiring **Full Stack Developer • Data Analyst • AI Enthusiast**
 
-### Connect with me
+### Connect With Me
 
-- LinkedIn
-- GitHub
-- Portfolio
+* 💻 GitHub — https://github.com/vanamalajayasurya
+* 🌐 Live Project — https://fitnesstracker-4v52xa13n-jayasuryas-projects-7a39637c.vercel.app/
 
 ---
 
 <div align="center">
 
-## ⭐ Star this repository if you like it!
+## ⭐ Train Hard. Track Every Rep. Become Stronger Every Day.
 
-<img src="assets/gifs/baki-smirk.gif" width="350"/>
+<img src="assets/gifs/baki-run.gif" width="90%" alt="Baki Ending Animation"/>
+
+**If you like this project, don't forget to ⭐ Star the repository!**
 
 </div>
