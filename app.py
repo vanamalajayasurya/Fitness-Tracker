@@ -24,7 +24,12 @@ HEADERS = {
 
 
 ROOT = Path(__file__).parent
-DB = ROOT / "fitness.db"
+
+# Use a writable database on Vercel.
+if os.environ.get("VERCEL"):
+    DB = Path("/tmp/fitness.db")
+else:
+    DB = ROOT / "fitness.db"
 
 app = Flask(__name__, static_folder=str(ROOT), static_url_path="")
 
@@ -33,7 +38,9 @@ app = Flask(__name__, static_folder=str(ROOT), static_url_path="")
 # FRONTEND
 # -------------------------------------------------------
 
-
+@app.before_request
+def setup_database():
+    init_db()
 
 @app.route("/")
 def home():
@@ -50,6 +57,9 @@ def static_files(path):
 # -------------------------------------------------------
 
 def get_db():
+    # Ensure the database directory exists on Vercel
+    DB.parent.mkdir(parents=True, exist_ok=True)
+
     conn = sqlite3.connect(DB)
     conn.row_factory = sqlite3.Row
     return conn
